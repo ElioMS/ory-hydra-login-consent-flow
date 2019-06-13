@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import LoginPage from './components/Login'
 import ConsentPage from './components/Consent'
+import CallbackPage from './components/Callback'
 import IndexPage from './components/HelloWorld'
 
 Vue.use(Router);
@@ -24,6 +25,11 @@ export default new Router({
             path: '/consent',
             name: 'consent',
             component: ConsentPage
+        },
+        {
+            path: '/callback',
+            name: 'callback',
+            component: CallbackPage
         }
     ]
 })
